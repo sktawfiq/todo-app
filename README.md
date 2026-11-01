@@ -8,7 +8,9 @@ Coming soon.
 
 ## Preview
 
-Coming soon.
+## Preview
+
+![Todo App Preview](assets/todo-app-preview.png)
 
 ## Features
 
