@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo App | Day 28</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="todo-app">
+      <header class="app-header">
+        <h1>My Todo List</h1>
+        <p>Plan your day, one task at a time.</p>
+      </header>
+
+      <form id="taskForm">
+        <label for="taskInput">New task</label>
+
+        <div class="task-input-group">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="What do you need to do?"
+            autocomplete="off"
+            required
+          />
+
+          <button type="submit" id="addTaskBtn">Add Task</button>
+        </div>
+      </form>
+
+      <section class="task-section" aria-labelledby="taskHeading">
+        <h2 id="taskHeading">Your Tasks</h2>
+
+        <p id="taskSummary">You have no tasks yet.</p>
+
+        <ul id="taskList"></ul>
+      </section>
+    </main>
+  </body>
+</html>

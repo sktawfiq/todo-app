@@ -1,0 +1,186 @@
+/* 1. Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* 3. Main app container */
+.todo-app {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+}
+
+/* 4. Header */
+.app-header {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.app-header p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* 5. Form */
+#taskForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.task-input-group {
+  display: flex;
+  gap: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#taskInput:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+#addTaskBtn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#addTaskBtn:hover {
+  background-color: #1d4ed8;
+}
+
+/* 6. Task section */
+.task-section {
+  margin-top: 32px;
+}
+
+.task-section h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+#taskSummary {
+  margin-bottom: 16px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* 7. Task list */
+#taskList {
+  list-style: none;
+}
+
+#taskList li {
+  overflow-wrap: anywhere;
+  padding: 14px;
+  margin-bottom: 10px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+  background-color: #f3f4f6;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+#taskList li span {
+  flex: 1;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+#taskList li button {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+#taskList li button:first-of-type {
+  background-color: #2563eb;
+}
+
+#taskList li button:first-of-type:hover {
+  background-color: #1d4ed8;
+}
+
+#taskList li button:last-of-type {
+  background-color: #dc2626;
+}
+
+#taskList li button:last-of-type:hover {
+  background-color: #b91c1c;
+}
+
+#taskList li.empty-message {
+  text-align: center;
+  color: #9ca3af;
+  background-color: transparent;
+  border: 1px dashed #d1d5db;
+  padding: 20px;
+}
+
+/* 8. Mobile responsiveness */
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .todo-app {
+    padding: 20px 16px;
+  }
+
+  .app-header h1 {
+    font-size: 27px;
+  }
+
+  .task-input-group {
+    flex-direction: column;
+  }
+
+  #addTaskBtn {
+    width: 100%;
+  }
+}
