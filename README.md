@@ -4,7 +4,7 @@ A responsive Todo App built with HTML, CSS, and Vanilla JavaScript. It allows us
 
 ## Live Demo
 
-[Todo App Live Demo Link](https://sktawfiq.github.io/todo-app)
+[Todo App Live Demo](https://sktawfiq.github.io/todo-app/)
 
 ## Preview
 
@@ -36,7 +36,7 @@ A responsive Todo App built with HTML, CSS, and Vanilla JavaScript. It allows us
 1. Clone the repository:
 
    ```bash
-   git clone YOUR_REPOSITORY_URL
+   git clone https://github.com/sktawfiq/todo-app.git
    ```
 
 2. Open the project folder.
