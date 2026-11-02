@@ -4,9 +4,7 @@ A responsive Todo App built with HTML, CSS, and Vanilla JavaScript. It allows us
 
 ## Live Demo
 
-Coming soon.
-
-## Preview
+[Todo App Live Demo Link](https://sktawfiq.github.io/todo-app)
 
 ## Preview
 
