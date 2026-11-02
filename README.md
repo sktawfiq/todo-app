@@ -49,11 +49,13 @@ No additional dependencies or installation are required.
 
 ```text
 todo-app/
-├── index.html
-├── style.css
-├── script.js
+├── assets/
+│   └── todo-app-preview.png
 ├── .gitignore
-└── README.md
+├── index.html
+├── README.md
+├── script.js
+└── style.css
 ```
 
 ## What I Practiced
